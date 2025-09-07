@@ -1,0 +1,54 @@
+name: Build Docs
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'site/**'        # only rebuild when /site changes
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Hugo (extended)
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      # Optional: ensure PostCSS pipeline is available for Docsy SCSS
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install PostCSS deps (no commit)
+        working-directory: site
+        run: |
+          if [ ! -f package.json ]; then
+            npm init -y >/dev/null 2>&1
+          fi
+          npm install --no-audit --no-fund --silent --save-dev postcss postcss-cli autoprefixer
+          echo "module.exports = { plugins: { autoprefixer: {} } }" > postcss.config.cjs
+
+      - name: Build Hugo site (outputs to /docs)
+        working-directory: site
+        run: hugo
+
+      - name: Commit and push /docs (if changed)
+        run: |
+          if [ -n "$(git status --porcelain docs)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs
+            git commit -m "CI: build docs [skip ci]"
+            git push
+          else
+            echo "No changes in docs/"
+          fi
