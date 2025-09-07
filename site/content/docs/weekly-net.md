@@ -7,8 +7,8 @@ description: "When we meet, what to bring, and how to join the El Paso Meshtasti
 Our **Weekly Net** is a casual, field‑friendly meetup focused on **onboarding, range testing, and hands‑on learning**.
 
 {{< alert color="info" >}}
-**Schedule:** **1st Saturday monthly, 10:00–12:00**  
-**Location:** announced in **#meetups** on Discord (may rotate for coverage testing)  
+**Schedule:** **TBD**  
+**Location:** announced in **#meeting-plans** on Discord (may rotate for coverage testing)  
 **RSVP:** [Join Discord](https://discord.gg/elp-mesh) and watch the event thread
 {{< /alert >}}
 
