@@ -1,8 +1,8 @@
-{{/* Favicons + hero background URL (use relURL so it works on GitHub Pages subpaths) */}}
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="shortcut icon" href="/favicon.ico">
+{{/* Favicons + hero background URL (relURL for project pages) */}}
+<link rel="icon" type="image/png" sizes="32x32" href='{{ "favicon-32x32.png" | relURL }}'>
+<link rel="icon" type="image/png" sizes="16x16" href='{{ "favicon-16x16.png" | relURL }}'>
+<link rel="apple-touch-icon" sizes="180x180" href='{{ "apple-touch-icon.png" | relURL }}'>
+<link rel="shortcut icon" href='{{ "favicon.ico" | relURL }}'>
 
 <style>
   .hero--elpaso {
@@ -18,18 +18,21 @@
     padding: 5rem 1rem 4rem;
     color: inherit;
   }
+  /* Stronger overlay for readability */
   .hero--elpaso::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+    background: linear-gradient(180deg, rgba(0,0,0,.60), rgba(0,0,0,.40));
   }
   [data-theme="light"] .hero--elpaso::before {
-    background: linear-gradient(180deg, rgba(0,0,0,.30), rgba(0,0,0,.15));
+    background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.30));
   }
   .hero--elpaso .hero__inner {
     position: relative;
     z-index: 1;
     max-width: 900px;
   }
+  /* Text shadow for better legibility over photo */
+  .hero__title, .hero__lead { text-shadow: 0 2px 8px rgba(0,0,0,.45); }
 </style>
