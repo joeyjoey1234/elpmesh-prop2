@@ -1,5 +1,6 @@
 baseURL = "https://joeyjoey1234.github.io/elpmesh-prop2/"  # project page URL (keep trailing slash)
 title   = "El Paso Mesh"
+languageCode = "en-us"
 publishDir = "../docs"                                     # build output folder that GitHub Pages will serve
 enableGitInfo = true                                       # enables “last updated” metadata in Docsy
 
