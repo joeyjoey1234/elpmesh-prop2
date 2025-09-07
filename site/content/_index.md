@@ -44,7 +44,7 @@ Build and learn a local LoRa mesh for back-up comms, events, and experiments—n
 </div>
 
 <div class="alert alert-info my-4" role="note">
-  <strong>Next Meetup:</strong> 1st Saturday monthly, 10:00–12:00 — location posted in <em>#meetups</em> on Discord.
+  <strong>Next Meetup:</strong> TBD in <em>#meeting-plans</em> on Discord.
   <a class="ms-2" href="https://discord.gg/elp-mesh">RSVP in Discord →</a>
 </div>
 
