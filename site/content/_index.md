@@ -5,15 +5,16 @@ type: "home"
 description: "Meshtastic El Paso — off-grid LoRa mesh community with Docs, News, Map & Links."
 ---
 
-{{< blocks/cover title="Off-grid comms for El Paso" image_anchor="top" height="auto" >}}
+# Off-grid comms for El Paso
+
 <p class="lead">
 Build and learn a local LoRa mesh for back-up comms, events, and experiments—no license required for most US use.
 </p>
-<div class="mt-3">
+
+<p>
   <a class="btn btn-primary me-2" href="/docs/">Read the Docs</a>
-  <a class="btn btn-outline-primary" href="https://discord.gg/elp-mesh">Join The Discord</a>
-</div>
-{{< /blocks/cover >}}
+  <a class="btn btn-outline-primary" href="https://discord.gg/elp-mesh">Join Discord</a>
+</p>
 
 {{< blocks/section >}}
 {{% blocks/feature title="Local Resilience" %}}
