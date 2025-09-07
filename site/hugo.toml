@@ -18,8 +18,9 @@ enableGitInfo = true
   [params.ui]
     showLightDarkModeMenu = true
     sidebar_menu_compact  = true
-	
+    # NOTE: Do NOT set navbar_logo here; Docsy auto-detects assets/icons/logo.svg
 
+# Enable raw HTML inside Markdown (needed for homepage rows/cards)
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
