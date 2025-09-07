@@ -1,16 +1,15 @@
-/* === Project styles (safe overrides) =============================
-   Layout fixes that don't depend on Bootstrap variable recompiles.
-   Docsy will auto-include this if present.
+/* === Project styles (polish & fixes) =============================
+   Small, safe overrides layered on top of Docsy.
 =================================================================== */
 
 /* 1) Keep content clear of sticky header */
 main, .td-content, .td-main {
-  padding-top: 4.75rem; /* adjust 4.25–5.25rem if your header height changes */
+  padding-top: 5rem; /* adjust 4.5–5.5rem if your header height changes */
 }
 
 /* 2) Anchor jumps / ToC links shouldn't hide headings under the navbar */
-:target { scroll-margin-top: 5.25rem; }
-h1, h2, h3, h4, h5, h6 { scroll-margin-top: 5.25rem; }
+:target { scroll-margin-top: 5.5rem; }
+h1, h2, h3, h4, h5, h6 { scroll-margin-top: 5.5rem; }
 
 /* 3) Navbar brand (logo) sizing & alignment */
 .td-navbar .navbar-brand svg,
@@ -25,12 +24,39 @@ h1, h2, h3, h4, h5, h6 { scroll-margin-top: 5.25rem; }
   gap: .5rem;
 }
 
-/* 4) Home page spacing niceties */
-.home .lead { margin-bottom: 1rem; }
-.home .btn { margin-right: .5rem; margin-bottom: .5rem; }
+/* 4) Buttons & links: accessible hover/focus states */
+.btn-primary {
+  transition: filter .15s ease, box-shadow .15s ease;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  filter: brightness(1.08);
+}
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 .2rem rgba(230, 107, 46, .35); /* $primary w/ alpha */
+}
+.btn-outline-primary {
+  color: #E66B2E;
+  border-color: #E66B2E;
+}
+.btn-outline-primary:hover {
+  background-color: rgba(230, 107, 46, .12);
+  color: #E66B2E;
+}
+a { text-underline-offset: 2px; }
+a:focus {
+  outline: 2px solid rgba(62, 160, 230, .5); /* sky blue */
+  outline-offset: 2px;
+  text-decoration: none;
+}
 
-/* 5) Card polish on dark background */
+/* 5) Card polish (dark) */
 .card {
   background-color: #111722;
   border-color: #1b2534;
 }
+
+/* 6) Home layout gentle spacing */
+.home .lead { margin-bottom: 1rem; }
+.home .btn { margin-right: .5rem; margin-bottom: .5rem; }

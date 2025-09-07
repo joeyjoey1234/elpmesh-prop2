@@ -1,33 +1,42 @@
-// === Project variables (Bootstrap/Docsy) =========================
-// El Paso palette — avoiding UTEP navy/orange tones
-// "Desert Sunset" (primary adobe, turquoise secondary, desert gold accent)
-//===================================================================
+// === El Paso “Desert Sunset” palette & theme variables ===========
+// Keep UTEP navy/orange out; use adobe/turquoise/desert gold instead.
+// These are Bootstrap/Docsy variables compiled at build-time.
+// ================================================================
 
-$primary:   #E66B2E;  // main accent (buttons/links) — adobe/sunset
-$secondary: #2EA39A;  // turquoise accent
-$warning:   #FFD166;  // desert gold
+$primary:   #E66B2E; // adobe / sunset (links, primary buttons)
+$secondary: #2EA39A; // turquoise (secondary accents)
+$success:   #2EA39A;
+$info:      #3EA0E6; // sky
+$warning:   #FFD166; // desert gold
 
-// Canvas & text (dark theme baseline)
-$body-bg:    #0B0F14; // deep night-sky
-$body-color: #E7EDF5; // soft light text
-$link-color: $primary;
+// Base canvas & text (dark-first)
+$body-bg:    #0B0F14;  // deep night-sky
+$body-color: #E7EDF5;  // soft light text
 
-// Cards / surfaces
-$card-bg:            #111722;
-$card-border-color:  #1B2534;
+// Links
+$link-color:        $primary;
+$link-hover-color:  lighten($primary, 8%);
+$link-decoration:   none;
 
-// Navbar (dark)
+// Cards / panels
+$card-bg:           #111722;
+$card-border-color: #1B2534;
+
+// Navbar (dark variant used by Docsy)
 $navbar-dark-color:        #CFE2F3;
 $navbar-dark-hover-color:  #FFFFFF;
 
 // Buttons
 $btn-border-radius: .8rem;
+$btn-padding-y:     .55rem;
+$btn-padding-x:     1rem;
 
 // Code blocks
 $pre-bg:    #0F1520;
 $pre-color: #D7E3F4;
 
-// Optional: headings weight for better contrast on dark
+// Headings slightly brighter for contrast on dark
 $headings-color: #EAF3FB;
 
-// Docsy/Bootstrap uses your brand SVG if present; keep size consistent in _styles_project.scss
+// Optional: sans fallback stack (keeps default if Docsy sets one)
+// $font-family-sans-serif: "Inter", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
