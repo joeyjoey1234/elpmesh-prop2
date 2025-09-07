@@ -40,3 +40,12 @@ $headings-color: #EAF3FB;
 
 // Optional: sans fallback stack (keeps default if Docsy sets one)
 // $font-family-sans-serif: "Inter", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+
+
+// Navbar background colors (ensure navbar never uses $primary/orange as bg)
+$navbar-dark-bg:  #0B0F14;
+$navbar-light-bg: #F6F7F9;
+
+// Also tune light variant text to keep contrast good
+$navbar-light-color:       #1E2A35;
+$navbar-light-hover-color: #000000;

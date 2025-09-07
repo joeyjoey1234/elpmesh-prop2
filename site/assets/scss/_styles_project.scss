@@ -60,3 +60,12 @@ a:focus {
 /* 6) Home layout gentle spacing */
 .home .lead { margin-bottom: 1rem; }
 .home .btn { margin-right: .5rem; margin-bottom: .5rem; }
+
+
+/* Force navbar background (avoid Bootstrap bg-primary) */
+.td-navbar { background-color: #0B0F14 !important; border-bottom: 1px solid #1B2534; }
+[data-theme="light"] .td-navbar { background-color: #F6F7F9 !important; border-bottom-color: rgba(0,0,0,.08); }
+
+/* Inherit currentColor for logo/text to adapt to theme */
+.td-navbar { color: inherit; }
+.td-navbar .navbar-brand svg { color: currentColor; }
