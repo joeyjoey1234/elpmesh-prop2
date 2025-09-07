@@ -24,54 +24,75 @@ h1, h2, h3, h4, h5, h6 { scroll-margin-top: 5.5rem; }
   gap: .5rem;
 }
 
+/* 3a) Show brand text next to the logo (undo any prior hiding) */
+.td-navbar .navbar-brand__name {
+  display: inline-block !important;
+  margin-left: .25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 /* 4) Buttons & links: accessible hover/focus states */
-.btn-primary {
-  transition: filter .15s ease, box-shadow .15s ease;
-}
+.btn-primary { transition: filter .15s ease, box-shadow .15s ease; }
 .btn-primary:hover,
-.btn-primary:active {
-  filter: brightness(1.08);
-}
+.btn-primary:active { filter: brightness(1.08); }
 .btn-primary:focus {
   outline: none;
   box-shadow: 0 0 0 .2rem rgba(230, 107, 46, .35); /* $primary w/ alpha */
 }
-.btn-outline-primary {
-  color: #E66B2E;
-  border-color: #E66B2E;
-}
-.btn-outline-primary:hover {
-  background-color: rgba(230, 107, 46, .12);
-  color: #E66B2E;
-}
+.btn-outline-primary { color: #E66B2E; border-color: #E66B2E; }
+.btn-outline-primary:hover { background-color: rgba(230, 107, 46, .12); color: #E66B2E; }
 a { text-underline-offset: 2px; }
-a:focus {
-  outline: 2px solid rgba(62, 160, 230, .5); /* sky blue */
-  outline-offset: 2px;
-  text-decoration: none;
-}
+a:focus { outline: 2px solid rgba(62, 160, 230, .5); outline-offset: 2px; text-decoration: none; }
 
 /* 5) Card polish (dark) */
-.card {
-  background-color: #111722;
-  border-color: #1b2534;
-}
+.card { background-color: #111722; border-color: #1b2534; }
 
 /* 6) Home layout gentle spacing */
 .home .lead { margin-bottom: 1rem; }
 .home .btn { margin-right: .5rem; margin-bottom: .5rem; }
 
-
-/* Force navbar background (avoid Bootstrap bg-primary) */
-.td-navbar { background-color: #0B0F14 !important; border-bottom: 1px solid #1B2534; }
+/* 7) Force navbar background (avoid Bootstrap bg-primary) */
+.td-navbar { background-color: #0B0F14 !important; border-bottom: 1px solid #1B2534; color: inherit; }
+.td-navbar .navbar-brand svg { color: currentColor; }
 [data-theme="light"] .td-navbar { background-color: #F6F7F9 !important; border-bottom-color: rgba(0,0,0,.08); }
 
-/* Inherit currentColor for logo/text to adapt to theme */
-.td-navbar { color: inherit; }
-.td-navbar .navbar-brand svg { color: currentColor; }
-
-/* Footer styling (match navbar themes) */
+/* 8) Footer styling (match navbar themes) */
 .td-footer { background-color: #0B0F14; border-top: 1px solid #1B2534; color: #CFE2F3; }
 .td-footer a { color: inherit; text-decoration: none; }
 .td-footer a:hover { text-decoration: underline; }
 [data-theme="light"] .td-footer { background-color: #F6F7F9; color: #1E2A35; border-top-color: rgba(0,0,0,.08); }
+
+/* === Home hero with skyline background ========================== */
+.hero--elpaso {
+  position: relative;
+  min-height: 52vh;
+  background-image: url('/img/hero-elpaso.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+  color: inherit;
+}
+.hero--elpaso::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+}
+[data-theme="light"] .hero--elpaso::before {
+  background: linear-gradient(180deg, rgba(0,0,0,.30), rgba(0,0,0,.15));
+}
+.hero--elpaso .hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+/* Slight lift on cards */
+.card.shadow-sm { transition: transform .15s ease, box-shadow .15s ease; }
+.card.shadow-sm:hover { transform: translateY(-2px); }
