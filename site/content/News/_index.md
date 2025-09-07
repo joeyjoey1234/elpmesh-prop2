@@ -1,6 +1,7 @@
 ---
 title: "News"
 linkTitle: "News"
+layout: "list"
 description: "Updates and meetups from the El Paso Mesh community."
 ---
 

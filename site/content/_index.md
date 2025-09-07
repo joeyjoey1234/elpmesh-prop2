@@ -1,7 +1,7 @@
 ---
 title: "El Paso Mesh"
 linkTitle: "El Paso Mesh"
-type: "home"
+layout: "page"
 description: "Meshtastic El Paso — off-grid LoRa mesh community with Docs, News, Map & Links."
 ---
 

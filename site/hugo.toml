@@ -1,28 +1,25 @@
-baseURL = "https://joeyjoey1234.github.io/elpmesh-prop2/"  # project page URL (keep trailing slash)
+baseURL = "https://joeyjoey1234.github.io/elpmesh-prop2/"
 title   = "El Paso Mesh"
 languageCode = "en-us"
-publishDir = "../docs"                                     # build output folder that GitHub Pages will serve
-enableGitInfo = true                                       # enables “last updated” metadata in Docsy
+publishDir = "../docs"
+enableGitInfo = true
 
-# Use Docsy via Hugo Modules
 [module]
   [[module.imports]]
     path = "github.com/google/docsy"
   [[module.imports]]
     path = "github.com/google/docsy/dependencies"
 
-# Optional: output JSON search indexes later if we enable search (safe to keep)
 [outputs]
   section = ["HTML", "JSON"]
 
-# Docsy UI preferences
 [params]
   description = "Meshtastic El Paso — Docs, News, Map & Links"
   [params.ui]
-    showLightDarkModeMenu = true        # dark/light toggle in the header
-    sidebar_menu_compact  = true        # tighter left sidebar in Docs
+    showLightDarkModeMenu = true
+    sidebar_menu_compact  = true
+    navbar_logo = "/logo.svg"   # explicit navbar logo path (fallback to static)
 
-# Top navigation (shows on all Docsy pages, including home)
 [menu]
   [[menu.main]]
     name = "Docs"
@@ -44,8 +41,3 @@ enableGitInfo = true                                       # enables “last upd
     name = "Discord"
     url  = "https://discord.gg/elp-mesh"
     weight = 50
-
-# (Optional) clean permalinks; defaults are fine, but you can tweak later:
-#[permalinks]
-#  docs = "/docs/:sections/:slug/"
-#  news = "/news/:year/:month/:slug/"
