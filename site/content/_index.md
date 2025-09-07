@@ -17,7 +17,7 @@ description: "Meshtastic El Paso — off-grid LoRa mesh community with Docs, New
     <h1 class="display-5 fw-bold mb-3 hero__title">Off-grid comms for El Paso</h1>
     <p class="lead mb-4 hero__lead">Build and learn a local LoRa mesh for back-up comms, events, and experiments—no license required for most US use.</p>
     <p class="mb-0">
-      <a class="btn btn-primary me-2 mb-2" href="/docs/">Read the Docs</a>
+      <a class="btn btn-primary me-2 mb-2" href='{{< relref "docs/_index.md" >}}'>Read the Docs</a>
       <a class="btn btn-discord mb-2" href="https://discord.gg/elp-mesh">Join Discord</a>
     </p>
   </div>
