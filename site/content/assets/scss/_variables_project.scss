@@ -1,25 +1,33 @@
+// === Project variables (Bootstrap/Docsy) =========================
+// El Paso palette — avoiding UTEP navy/orange tones
+// "Desert Sunset" (primary adobe, turquoise secondary, desert gold accent)
+//===================================================================
 
-// Minimal brand tweaks for Docsy (Bootstrap variables)
-// Keep this file lightweight to avoid fighting the theme.
+$primary:   #E66B2E;  // main accent (buttons/links) — adobe/sunset
+$secondary: #2EA39A;  // turquoise accent
+$warning:   #FFD166;  // desert gold
 
-$primary: #4db6ff;        // brand accent (buttons/links)
-$secondary: #39d98a;      // subtle accent (badges, etc.)
+// Canvas & text (dark theme baseline)
+$body-bg:    #0B0F14; // deep night-sky
+$body-color: #E7EDF5; // soft light text
+$link-color: $primary;
 
-$body-bg: #0b0f14;        // dark background
-$body-color: #e7edf5;     // light text
-$link-color: $primary;    // link color to match brand
+// Cards / surfaces
+$card-bg:            #111722;
+$card-border-color:  #1B2534;
 
-// Cards / panels
-$card-bg: #111722;
-$card-border-color: #1b2534;
+// Navbar (dark)
+$navbar-dark-color:        #CFE2F3;
+$navbar-dark-hover-color:  #FFFFFF;
 
 // Buttons
 $btn-border-radius: .8rem;
 
-// Code blocks (keep contrast good)
-$pre-bg: #0f1520;
-$pre-color: #d7e3f4;
+// Code blocks
+$pre-bg:    #0F1520;
+$pre-color: #D7E3F4;
 
-// Optional: navbar adjustments (Docsy uses Bootstrap variables)
-$navbar-dark-color: #cfe2f3;
-$navbar-dark-hover-color: #ffffff;
+// Optional: headings weight for better contrast on dark
+$headings-color: #EAF3FB;
+
+// Docsy/Bootstrap uses your brand SVG if present; keep size consistent in _styles_project.scss
