@@ -1,0 +1,35 @@
+{{/* Favicons + hero background URL (use relURL so it works on GitHub Pages subpaths) */}}
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+<style>
+  .hero--elpaso {
+    position: relative;
+    min-height: 52vh;
+    background-image: url('{{ "img/hero-elpaso.webp" | relURL }}');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+    color: inherit;
+  }
+  .hero--elpaso::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+  }
+  [data-theme="light"] .hero--elpaso::before {
+    background: linear-gradient(180deg, rgba(0,0,0,.30), rgba(0,0,0,.15));
+  }
+  .hero--elpaso .hero__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+  }
+</style>

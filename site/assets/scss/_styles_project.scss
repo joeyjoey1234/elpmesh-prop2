@@ -96,3 +96,6 @@ a:focus { outline: 2px solid rgba(62, 160, 230, .5); outline-offset: 2px; text-d
 /* Slight lift on cards */
 .card.shadow-sm { transition: transform .15s ease, box-shadow .15s ease; }
 .card.shadow-sm:hover { transform: translateY(-2px); }
+
+/* Meetup banner tight spacing under navbar */
+.banner--meetup { border-radius: 0 !important; margin-top: -1px; }
