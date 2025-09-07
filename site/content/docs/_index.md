@@ -32,4 +32,9 @@ Range, antennas, batteries, privacy, and common troubleshooting.
 {{< /blocks/section >}}
 
 ## All pages
-{{% children depth="1" style="cards" description="true" %}}
+- **[Overview](/docs/overview/)** — What Meshtastic is and what you can do
+- **[Getting Started](/docs/getting-started/)** — Pick hardware, flash, pair, set US-915
+- **[Weekly Net](/docs/weekly-net/)** — Schedule, what to bring, range test flow
+- **[FAQ](/docs/faq/)** — Range, antennas, batteries, privacy, troubleshooting
+- **[Map & Data (Overview)](/docs/map-data/)** — Live tools and mapping basics
+- **[Useful Links (Overview)](/docs/links/)** — Official docs, apps, viewers, community
