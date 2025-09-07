@@ -11,7 +11,7 @@ Build and learn a local LoRa mesh for back-up comms, events, and experiments—n
 </p>
 <div class="mt-3">
   <a class="btn btn-primary me-2" href="/docs/">Read the Docs</a>
-  <a class="btn btn-outline-primary" href="https://discord.gg/elp-mesh">Join Discord</a>
+  <a class="btn btn-outline-primary" href="https://discord.gg/elp-mesh">Join The Discord</a>
 </div>
 {{< /blocks/cover >}}
 
