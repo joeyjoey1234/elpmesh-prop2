@@ -1,0 +1,25 @@
+
+// Minimal brand tweaks for Docsy (Bootstrap variables)
+// Keep this file lightweight to avoid fighting the theme.
+
+$primary: #4db6ff;        // brand accent (buttons/links)
+$secondary: #39d98a;      // subtle accent (badges, etc.)
+
+$body-bg: #0b0f14;        // dark background
+$body-color: #e7edf5;     // light text
+$link-color: $primary;    // link color to match brand
+
+// Cards / panels
+$card-bg: #111722;
+$card-border-color: #1b2534;
+
+// Buttons
+$btn-border-radius: .8rem;
+
+// Code blocks (keep contrast good)
+$pre-bg: #0f1520;
+$pre-color: #d7e3f4;
+
+// Optional: navbar adjustments (Docsy uses Bootstrap variables)
+$navbar-dark-color: #cfe2f3;
+$navbar-dark-hover-color: #ffffff;
