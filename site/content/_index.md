@@ -7,7 +7,7 @@ description: "Meshtastic El Paso — off-grid LoRa mesh community with Docs, New
 
 <!-- Meetup banner (top of page, below navbar) -->
 <div class="alert alert-info text-center mb-0 rounded-0 banner--meetup" role="note">
-  <strong>Next Meetup:</strong> 1st Saturday monthly, 10:00–12:00 — location posted in <em>#meetups</em> on Discord.
+  <strong>Next Meetup:</strong> TDB in <em>#meeting-plans</em> on Discord.
   <a class="ms-2" href="https://discord.gg/elp-mesh">RSVP in Discord →</a>
 </div>
 
