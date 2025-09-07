@@ -18,7 +18,12 @@ enableGitInfo = true
   [params.ui]
     showLightDarkModeMenu = true
     sidebar_menu_compact  = true
-    navbar_logo = "/logo.svg"   # explicit navbar logo path (fallback to static)
+	
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
   [[menu.main]]

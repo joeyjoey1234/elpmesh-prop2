@@ -7,21 +7,14 @@
       .txt2 { fill: #CFE2F3; font: 400 12px 'Inter', 'Segoe UI', Roboto, Arial, sans-serif; letter-spacing: .8px; }
     </style>
   </defs>
-
-  <!-- Simple mesa/mountain + signal arcs -->
   <g transform="translate(10,10)">
-    <!-- sun -->
     <circle class="sun" cx="26" cy="18" r="7"/>
-    <!-- mountain line -->
     <path class="mark" d="M2,32 L18,24 L26,28 L34,22 L50,30"/>
-    <!-- signal arcs -->
     <path class="mark" d="M60,16 q8,8 0,16"/>
     <path class="mark" d="M65,12 q12,12 0,24"/>
   </g>
-
-  <!-- Text -->
   <g transform="translate(96,23)">
     <text class="txt">EL PASO MESH</text>
-    <text class="txt2" y="18">LoRa · Off‑grid · Community</text>
+    <text class="txt2" y="18">LoRa · Off-grid · Community</text>
   </g>
 </svg>
