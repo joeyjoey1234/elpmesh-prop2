@@ -49,4 +49,4 @@ New here? After this page, go to **[Getting Started](/docs/getting-started/)** t
 ## Next steps
 - **Set up your first node:** head to **[Getting Started](/docs/getting-started/)**  
 - **Join the community:** hop into our **Discord** from the header for channel details and meetups  
-- **See coverage tools:** check **[Map & Data](/map/)** for Explorer/Meshview links and mapping notes
+- **See coverage tools:** check **[Map & Data](/map/)** for live map viewers and mapping notes
