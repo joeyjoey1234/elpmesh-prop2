@@ -9,9 +9,9 @@ For the full public list we maintain, see **[/map/](/map/)**.
 
 {{< alert color="info" >}}
 **Live tools (external):**
-- **Meshtastic Explorer:** <https://explorer.meshtastic.org>
-- **Meshview:** <https://meshview.org>
-- **Liam Cottle Map:** <https://meshtastic.liamcottle.net>
+- **MeshMap:** <https://meshmap.net/> (Populated by MQTT)
+- **Liam Cottle Map:** <https://meshtastic.liamcottle.net> (Populated by MQTT)
+- **Meshsense Map:** <https://meshsense.affirmatech.com/> (Populated by MeshSense)
 {{< /alert >}}
 
 ## Mapping basics

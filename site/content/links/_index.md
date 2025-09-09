@@ -23,11 +23,12 @@ For live viewers and mapping notes, see **[Map & Data](/map/)**.
 - **Web client:** linked from the official docs
 
 ## Mapping & Viewers
-- **Meshtastic Explorer:** <https://explorer.meshtastic.org>
-- **Meshview:** <https://meshview.org>
-- **Liam Cottle Map:** <https://meshtastic.liamcottle.net>
+- **MeshMap:** <https://meshmap.net/> (Populated by MQTT)
+- **Liam Cottle Map:** <https://meshtastic.liamcottle.net> (Populated by MQTT)
+- **Meshsense Map:** <https://meshsense.affirmatech.com/> (Populated by MeshSense)
 
 ## Tools & Extras
+- **MeshSense:** <https://affirmatech.com/meshsense> Cross-platform mesh network monitor
 - **Meshtastic MQTT / Integrations:** see sections in the official docs
 - **Antenna basics:** ARRL-style primers and RF videos (general LOS/gain explanations)
 - **Coverage planning:** topographic maps, hillshade, or city elevation data

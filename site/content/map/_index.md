@@ -9,9 +9,9 @@ description: "Live viewers for Meshtastic nodes, mapping tips, and how to share 
 Use these **live viewers** to see nodes and packets in near real-time. During meetups we post event channels in Discord so everyone can follow along.
 
 ## Live Viewers
-- **Meshtastic Explorer** — powerful filters, device/packet views: <https://explorer.meshtastic.org>
-- **Meshview** — lightweight global viewer: <https://meshview.org>
-- **Liam Cottle Map** — simple, fast map: <https://meshtastic.liamcottle.net>
+- **MeshMap:** <https://meshmap.net/> (Populated by MQTT)
+- **Liam Cottle Map:** <https://meshtastic.liamcottle.net> (Populated by MQTT)
+- **Meshsense Map:** <https://meshsense.affirmatech.com/> (Populated by MeshSense)
 
 > Tip: If you don't want your position shown publicly, disable position beacons, or use a private channel with unique PSK.
 

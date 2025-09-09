@@ -20,11 +20,12 @@ If you’re new, start with **[Getting Started](/docs/getting-started/)** and jo
 - **iOS app:** App Store (linked from official docs)
 - **Web client:** linked from the official docs
 - **CLI:** <https://github.com/meshtastic/Meshtastic-CLI>
+- **Third-Party:** <https://affirmatech.com/meshsense> Cross-platform mesh network monitor
 
 ## Mapping & Viewers
-- **Meshtastic Explorer:** <https://explorer.meshtastic.org>
-- **Meshview:** <https://meshview.org>
-- **Liam Cottle Map:** <https://meshtastic.liamcottle.net>
+- **MeshMap:** <https://meshmap.net/> (Populated by MQTT)
+- **Liam Cottle Map:** <https://meshtastic.liamcottle.net> (Populated by MQTT)
+- **Meshsense Map:** <https://meshsense.affirmatech.com/> (Populated by MeshSense)
 - See also: our top-level **[Map & Data](/map/)** page for more details and usage notes.
 
 ## Community & Help
